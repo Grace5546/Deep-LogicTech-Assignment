@@ -1,0 +1,16 @@
+import newspaper
+import json
+
+url = 'https://time.com'
+  
+article = newspaper.Article(url=url, language='en')
+article.download()
+article.parse()
+
+article ={
+    "title": str(article.title),
+    "url": str(article.url)
+}
+print(article["title"] \
+     + "\n\t\t" + article["url"] 
+     )
