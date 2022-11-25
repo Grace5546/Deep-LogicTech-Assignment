@@ -40,4 +40,4 @@ def NewsFromTimes():
 # Driver Code
 if __name__ == '__main__':
     # function call
-    NewsFromTimes()
+    NewsFromTimes();
